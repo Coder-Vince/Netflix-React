@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 16.7px;
+  font-weight: bold;
+  color: white;
+  margin-left: 45px;
+}
+
+/* HEADER */
+
+header {
+  background-color: black;
+  height: 68px;
+  margin-bottom: 60px;
+}
+
+header img {
+  width: 105px;
+  height: 93px;
+}
+
+/* SECTION */
+
+/* POUR MASQUER LA SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+section {
+  /* background-color: blue;
+  border: white solid 3px; */
+  height: 170px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  list-style: none;
+  overflow-x: scroll;
+}
+
+section img {
+  height: 125px;
+  width: 220px;
+  /* NÉCESSAIRE POUR NE PAS COMPRESSER LES ITEMS */
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
